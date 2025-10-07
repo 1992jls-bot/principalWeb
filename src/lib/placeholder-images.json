@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Abstract background for hero section",
+      "imageUrl": "https://picsum.photos/seed/hero/1920/1080",
+      "imageHint": "abstract code"
+    },
+    {
+      "id": "profile-picture",
+      "description": "Profile picture of Jesús López",
+      "imageUrl": "https://picsum.photos/seed/me/400/400",
+      "imageHint": "profile picture"
+    },
+    {
+      "id": "project-1",
+      "description": "Screenshot of Corporate Landing Page project",
+      "imageUrl": "https://picsum.photos/seed/project1/600/400",
+      "imageHint": "corporate website"
+    },
+    {
+      "id": "project-2",
+      "description": "Screenshot of Interactive Web Application project",
+      "imageUrl": "https://picsum.photos/seed/project2/600/400",
+      "imageHint": "web application"
+    },
+    {
+      "id": "project-3",
+      "description": "Screenshot of Administration Dashboard project",
+      "imageUrl": "https://picsum.photos/seed/project3/600/400",
+      "imageHint": "dashboard admin"
+    }
+  ]
 }
