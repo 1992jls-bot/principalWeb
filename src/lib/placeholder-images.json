@@ -15,19 +15,19 @@
     {
       "id": "project-1",
       "description": "Screenshot of Corporate Landing Page project",
-      "imageUrl": "https://picsum.photos/seed/newproject1/600/400",
+      "imageUrl": "https://picsum.photos/seed/brandnewproj1/600/400",
       "imageHint": "corporate website"
     },
     {
       "id": "project-2",
       "description": "Screenshot of Interactive Web Application project",
-      "imageUrl": "https://picsum.photos/seed/newproject2/600/400",
+      "imageUrl": "https://picsum.photos/seed/brandnewproj2/600/400",
       "imageHint": "web application"
     },
     {
       "id": "project-3",
       "description": "Screenshot of Administration Dashboard project",
-      "imageUrl": "https://picsum.photos/seed/newproject3/600/400",
+      "imageUrl": "https://picsum.photos/seed/brandnewproj3/600/400",
       "imageHint": "dashboard admin"
     }
   ]
