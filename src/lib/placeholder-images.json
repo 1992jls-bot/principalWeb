@@ -3,7 +3,7 @@
     {
       "id": "hero-background",
       "description": "Abstract background for hero section",
-      "imageUrl": "https://picsum.photos/seed/hero/1920/1080",
+      "imageUrl": "",
       "imageHint": "abstract code"
     },
     {
@@ -15,19 +15,19 @@
     {
       "id": "project-1",
       "description": "Screenshot of Corporate Landing Page project",
-      "imageUrl": "https://picsum.photos/seed/project1/600/400",
+      "imageUrl": "https://picsum.photos/seed/newproject1/600/400",
       "imageHint": "corporate website"
     },
     {
       "id": "project-2",
       "description": "Screenshot of Interactive Web Application project",
-      "imageUrl": "https://picsum.photos/seed/project2/600/400",
+      "imageUrl": "https://picsum.photos/seed/newproject2/600/400",
       "imageHint": "web application"
     },
     {
       "id": "project-3",
       "description": "Screenshot of Administration Dashboard project",
-      "imageUrl": "https://picsum.photos/seed/project3/600/400",
+      "imageUrl": "https://picsum.photos/seed/newproject3/600/400",
       "imageHint": "dashboard admin"
     }
   ]

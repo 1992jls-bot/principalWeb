@@ -90,7 +90,7 @@ const skills = [
   {
     icon: GitBranch,
     title: "Herramientas",
-    technologies: "Git, GitHub, Visual Studio, Azure DevOps (Básico)",
+    technologies: "Git, GitHub, Visual Studio",
     description: "Uso de herramientas para control de versiones y gestión de proyectos."
   },
 ];
