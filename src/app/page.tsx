@@ -80,7 +80,6 @@ const skills = [
   {
     icon: GitBranch,
     title: "Herramientas",
-    technologies: "Git, GitHub, Visual Studio",
     description: "Uso de herramientas para control de versiones y gestión de proyectos."
   },
 ];
@@ -134,7 +133,7 @@ function AboutSection() {
         <div className="grid gap-12 lg:grid-cols-5 lg:gap-16 items-center">
           <div className="lg:col-span-2 flex justify-center">
             {profilePicture && (
-              <Avatar className="h-64 w-64 border-4 border-primary/50 shadow-lg">
+              <Avatar className="h-48 w-48 border-4 border-primary/50 shadow-lg">
                 <AvatarImage src={profilePicture.imageUrl} alt={profilePicture.description} data-ai-hint={profilePicture.imageHint} />
                 <AvatarFallback>JL</AvatarFallback>
               </Avatar>
@@ -235,7 +234,7 @@ function SkillsSection() {
                 <h3 className="text-2xl font-bold">{skill.title}</h3>
               </div>
               <p className="text-sm text-foreground/80">{skill.description}</p>
-              <p className="text-sm font-medium text-primary">{skill.technologies}</p>
+              {skill.technologies && <p className="text-sm font-medium text-primary">{skill.technologies}</p>}
             </Card>
           ))}
         </div>
