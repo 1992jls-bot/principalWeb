@@ -75,13 +75,13 @@ const skills = [
     title: "Bases de Datos",
     description:
       "Gestiono la capa de acceso a datos de forma segura y optimizada, conectando la lógica de negocio con bases de datos relacionales.",
-    technologies: ["SQL Server", "MySQL", "PostgreSQL", "MongoDB"],
+    technologies: ["SQL Server", "MySQL"],
   },
   {
     icon: GitBranch,
     title: "Herramientas",
     description: "Uso de herramientas para control de versiones y gestión de proyectos.",
-    technologies: ["Git", "GitHub", "Jira", "Scrum"],
+    technologies: ["Git", "GitHub"],
   },
 ];
 
