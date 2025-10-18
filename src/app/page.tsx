@@ -276,9 +276,9 @@ function ContactSection() {
               Estoy buscando activamente nuevos desafíos y oportunidades para aportar mi experiencia. Si tienes un proyecto en mente, una vacante en tu equipo o simplemente quieres conectar, no dudes en contactarme.
             </p>
             <div className="space-y-4">
-              <a href="mailto:tuemail@ejemplo.com" className="flex items-center gap-4 group">
+              <a href="mailto:contacto@jesuslopezweb.com" className="flex items-center gap-4 group">
                 <Mail className="h-6 w-6 text-primary" />
-                <span className="text-lg group-hover:underline">tuemail@ejemplo.com</span>
+                <span className="text-lg group-hover:underline">contacto@jesuslopezweb.com</span>
               </a>
               <a href="https://www.linkedin.com/in/jesús-lópez-serrano" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <Linkedin className="h-6 w-6 text-primary" />
@@ -307,7 +307,7 @@ function Footer() {
         <p>&copy; {new Date().getFullYear()} Jesús López. Todos los derechos reservados.</p>
         <div className="flex gap-4 mt-4 md:mt-0">
           <Link href="https://www.linkedin.com/in/jesús-lópez-serrano" target="_blank" rel="noopener noreferrer" className="hover:text-primary"><Linkedin className="h-5 w-5"/></Link>
-          <Link href="mailto:tuemail@ejemplo.com" className="hover:text-primary"><Mail className="h-5 w-5"/></Link>
+          <Link href="mailto:contacto@jesuslopezweb.com" className="hover:text-primary"><Mail className="h-5 w-5"/></Link>
         </div>
       </div>
     </footer>
