@@ -37,7 +37,6 @@ const projects = [
     title: "Proyecto 1: Landing Page Corporativa Dinámica",
     description:
       "Maquetación de una página web estática para una empresa ficticia, enfocada en una estructura semántica con HTML5 y estilos con CSS3",
-    technologies: ["Angular", "TypeScript", "Responsive Design"],
     liveLink: "https://jesuslopezweb.com/web1/",
   },
   {
@@ -45,12 +44,6 @@ const projects = [
     title: "Proyecto 2: Aplicación Web Interactiva",
     description:
       "Desarrollo de una landing page con diseño responsive, asegurando una correcta visualización en dispositivos móviles, tablets y escritorio usando Flexbox y Media Queries",
-    technologies: [
-      "Angular",
-      "ASP.NET Core",
-      "Entity Framework",
-      "SQL Server",
-    ],
     liveLink: "https://jesuslopezweb.com/web2/",
   },
   {
@@ -58,7 +51,6 @@ const projects = [
     title: "Proyecto 3: Dashboard de Administración",
     description:
       "Creación de un layout complejo para un portafolio personal utilizando CSS Grid, optimizando la organización del contenido",
-    technologies: ["Angular", "API RESTful", "SQL Server"],
     liveLink: "https://jesuslopezweb.com/web3/",
   },
 ];
@@ -203,11 +195,6 @@ function ProjectsSection() {
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <p className="text-sm text-foreground/80 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="secondary">{tech}</Badge>
-                    ))}
-                  </div>
                 </CardContent>
                 <CardFooter>
                   <Button asChild className="w-full" variant="outline">
