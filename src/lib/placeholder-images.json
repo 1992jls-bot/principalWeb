@@ -15,13 +15,13 @@
     {
       "id": "project-1",
       "description": "Screenshot of Corporate Landing Page project",
-      "imageUrl": "https://jesuslopezweb.com/images/Web_1.png",
+      "imageUrl": "https://jesuslopezweb.com/images/Web_1.jpeg",
       "imageHint": "corporate website"
     },
     {
       "id": "project-2",
       "description": "Screenshot of Interactive Web Application project",
-      "imageUrl": "https://jesuslopezweb.com/images/web_2.png",
+      "imageUrl": "/images/web_2.png",
       "imageHint": "web application"
     },
     {
