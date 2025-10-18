@@ -46,13 +46,6 @@ const projects = [
       "Desarrollo de una landing page con diseño responsive, asegurando una correcta visualización en dispositivos móviles, tablets y escritorio usando Flexbox y Media Queries",
     liveLink: "https://jesuslopezweb.com/web2/",
   },
-  {
-    id: "project-3",
-    title: "Proyecto 3: Dashboard de Administración",
-    description:
-      "Creación de un layout complejo para un portafolio personal utilizando CSS Grid, optimizando la organización del contenido",
-    liveLink: "https://jesuslopezweb.com/web3/",
-  },
 ];
 
 const skills = [
