@@ -57,7 +57,7 @@ const projects = [
     id: "project-3",
     title: "Proyecto 3: Dashboard de Administración",
     description:
-      "Diseño e implementación de un panel de control para la visualización y gestión de datos. La interfaz, construida con Angular, permite una manipulación de datos eficiente, mientras que el Back-End en .NET garantiza la seguridad y la integridad de la información.",
+      "Diseño e implementación de un panel de control para la visualización y gestión de datos. La interfaz, construida con Angular, permite una manipulación de datos eficiente, mientras que el Back-End garantiza la seguridad y la integridad de la información.",
     technologies: ["Angular", "API RESTful", "SQL Server"],
     liveLink: "https://jesuslopezweb.com/web3/",
   },
@@ -74,7 +74,7 @@ const skills = [
   {
     icon: Server,
     title: "Back-End",
-    technologies: ".NET, ASP.NET Core, C#",
+    technologies: "ASP.NET Core, C#",
     description:
       "Diseño y desarrollo de APIs RESTful seguras y eficientes que forman el núcleo de la lógica de negocio de cualquier aplicación.",
   },

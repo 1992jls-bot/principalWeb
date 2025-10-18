@@ -33,13 +33,7 @@ const nextConfig: NextConfig = {
         hostname: 'jesuslopezweb.com',
         port: '',
         pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'firebasestorage.googleapis.com',
-        port: '',
-        pathname: '/**',
-      },
+      }
     ],
   },
 };

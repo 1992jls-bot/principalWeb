@@ -15,7 +15,7 @@
     {
       "id": "project-1",
       "description": "Screenshot of Corporate Landing Page project",
-      "imageUrl": "https://jesuslopezweb.com/images/Web_1.png?t=1",
+      "imageUrl": "https://jesuslopezweb.com/images/Web_1.png",
       "imageHint": "corporate website"
     },
     {
@@ -27,7 +27,7 @@
     {
       "id": "project-3",
       "description": "Screenshot of Administration Dashboard project",
-      "imageUrl": "https://images.unsplash.com/photo-1730578725454-dc9899fef7e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhZG1pbnxlbnwwfHx8fDE3NjA3NzQzNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/dashboard.png",
       "imageHint": "dashboard admin"
     }
   ]
