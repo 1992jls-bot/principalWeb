@@ -36,7 +36,7 @@ const projects = [
     id: "project-1",
     title: "Proyecto 1: Landing Page Corporativa Dinámica",
     description:
-      "Desarrollo de una interfaz de usuario moderna y adaptable para una web de presentación de servicios. El foco principal fue crear una experiencia de navegación fluida e intuitiva, asegurando la compatibilidad en todos los dispositivos.",
+      "Maquetación de una página web estática para una empresa ficticia, enfocada en una estructura semántica con HTML5 y estilos con CSS3",
     technologies: ["Angular", "TypeScript", "Responsive Design"],
     liveLink: "https://jesuslopezweb.com/web1/",
   },
