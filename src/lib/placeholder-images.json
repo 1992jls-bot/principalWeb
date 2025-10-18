@@ -9,25 +9,25 @@
     {
       "id": "profile-picture",
       "description": "Profile picture of Jesús López",
-      "imageUrl": "https://picsum.photos/seed/me/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8fHwxNzYwNzMyMjUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "profile picture"
     },
     {
       "id": "project-1",
       "description": "Screenshot of Corporate Landing Page project",
-      "imageUrl": "https://picsum.photos/seed/brandnewproj1/600/400",
+      "imageUrl": "https://jesuslopezweb.com/images/Web_1.png",
       "imageHint": "corporate website"
     },
     {
       "id": "project-2",
       "description": "Screenshot of Interactive Web Application project",
-      "imageUrl": "https://picsum.photos/seed/brandnewproj2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3ZWIlMjBhcHBsaWNhdGlvbnxlbnwwfHx8fDE3NjA3NDE2NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "web application"
     },
     {
       "id": "project-3",
       "description": "Screenshot of Administration Dashboard project",
-      "imageUrl": "https://picsum.photos/seed/brandnewproj3/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1730578725454-dc9899fef7e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhZG1pbnxlbnwwfHx8fDE3NjA3NzQzNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dashboard admin"
     }
   ]
