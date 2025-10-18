@@ -280,7 +280,7 @@ function ContactSection() {
                 <Mail className="h-6 w-6 text-primary" />
                 <span className="text-lg group-hover:underline">tuemail@ejemplo.com</span>
               </a>
-              <a href="#" className="flex items-center gap-4 group">
+              <a href="https://www.linkedin.com/in/jesús-lópez-serrano" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <Linkedin className="h-6 w-6 text-primary" />
                 <span className="text-lg group-hover:underline">LinkedIn</span>
               </a>
@@ -306,7 +306,7 @@ function Footer() {
       <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between text-sm text-foreground/60">
         <p>&copy; {new Date().getFullYear()} Jesús López. Todos los derechos reservados.</p>
         <div className="flex gap-4 mt-4 md:mt-0">
-          <Link href="#" className="hover:text-primary"><Linkedin className="h-5 w-5"/></Link>
+          <Link href="https://www.linkedin.com/in/jesús-lópez-serrano" target="_blank" rel="noopener noreferrer" className="hover:text-primary"><Linkedin className="h-5 w-5"/></Link>
           <Link href="mailto:tuemail@ejemplo.com" className="hover:text-primary"><Mail className="h-5 w-5"/></Link>
         </div>
       </div>
