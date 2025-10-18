@@ -61,23 +61,27 @@ const skills = [
     title: "Front-End",
     description:
       "Construyo interfaces de usuario dinámicas, escalables y responsives, centradas en ofrecer una experiencia de usuario excepcional.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Angular", "React"],
   },
   {
     icon: Server,
     title: "Back-End",
     description:
       "Diseño y desarrollo de APIs RESTful seguras y eficientes que forman el núcleo de la lógica de negocio de cualquier aplicación.",
+    technologies: [".NET", "C#", "ASP.NET Core", "Entity Framework", "Node.js"],
   },
   {
     icon: Database,
     title: "Bases de Datos",
     description:
       "Gestiono la capa de acceso a datos de forma segura y optimizada, conectando la lógica de negocio con bases de datos relacionales.",
+    technologies: ["SQL Server", "MySQL", "PostgreSQL", "MongoDB"],
   },
   {
     icon: GitBranch,
     title: "Herramientas",
-    description: "Uso de herramientas para control de versiones y gestión de proyectos."
+    description: "Uso de herramientas para control de versiones y gestión de proyectos.",
+    technologies: ["Git", "GitHub", "Jira", "Scrum"],
   },
 ];
 
@@ -231,6 +235,11 @@ function SkillsSection() {
                 <h3 className="text-2xl font-bold">{skill.title}</h3>
               </div>
               <p className="text-sm text-foreground/80">{skill.description}</p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                {skill.technologies.map((tech) => (
+                  <Badge key={tech} variant="secondary">{tech}</Badge>
+                ))}
+              </div>
             </Card>
           ))}
         </div>
