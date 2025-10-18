@@ -168,7 +168,7 @@ function ProjectsSection() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-start gap-8 py-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-5xl items-start gap-8 py-12 sm:grid-cols-1 md:grid-cols-2 lg:max-w-4xl">
           {projects.map((project) => {
             const image = PlaceHolderImages.find((img) => img.id === project.id);
             return (
