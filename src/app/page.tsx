@@ -44,7 +44,7 @@ const projects = [
     id: "project-2",
     title: "Proyecto 2: Aplicación Web Interactiva",
     description:
-      "Creación de una aplicación web con componentes interactivos y una gestión de estado compleja. La arquitectura se diseñó para ser escalable, conectando el Front-End con una API RESTful para la gestión de datos en tiempo real.",
+      "Desarrollo de una landing page con diseño responsive, asegurando una correcta visualización en dispositivos móviles, tablets y escritorio usando Flexbox y Media Queries",
     technologies: [
       "Angular",
       "ASP.NET Core",
@@ -57,7 +57,7 @@ const projects = [
     id: "project-3",
     title: "Proyecto 3: Dashboard de Administración",
     description:
-      "Diseño e implementación de un panel de control para la visualización y gestión de datos. La interfaz, construida con Angular, permite una manipulación de datos eficiente, mientras que el Back-End garantiza la seguridad y la integridad de la información.",
+      "Creación de un layout complejo para un portafolio personal utilizando CSS Grid, optimizando la organización del contenido",
     technologies: ["Angular", "API RESTful", "SQL Server"],
     liveLink: "https://jesuslopezweb.com/web3/",
   },
