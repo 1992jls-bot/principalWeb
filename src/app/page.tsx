@@ -59,21 +59,18 @@ const skills = [
   {
     icon: PanelTop,
     title: "Front-End",
-    technologies: "Angular, TypeScript, JavaScript, HTML5, CSS3, SCSS",
     description:
       "Construyo interfaces de usuario dinámicas, escalables y responsives, centradas en ofrecer una experiencia de usuario excepcional.",
   },
   {
     icon: Server,
     title: "Back-End",
-    technologies: "ASP.NET Core, C#",
     description:
       "Diseño y desarrollo de APIs RESTful seguras y eficientes que forman el núcleo de la lógica de negocio de cualquier aplicación.",
   },
   {
     icon: Database,
     title: "Bases de Datos",
-    technologies: "SQL Server, Entity Framework Core",
     description:
       "Gestiono la capa de acceso a datos de forma segura y optimizada, conectando la lógica de negocio con bases de datos relacionales.",
   },
@@ -234,7 +231,6 @@ function SkillsSection() {
                 <h3 className="text-2xl font-bold">{skill.title}</h3>
               </div>
               <p className="text-sm text-foreground/80">{skill.description}</p>
-              {skill.technologies && <p className="text-sm font-medium text-primary">{skill.technologies}</p>}
             </Card>
           ))}
         </div>
