@@ -15,7 +15,7 @@
     {
       "id": "project-1",
       "description": "Screenshot of Corporate Landing Page project",
-      "imageUrl": "https://jesuslopezweb.com/images/Web_1.jpeg",
+      "imageUrl": "/images/web_1.png",
       "imageHint": "corporate website"
     },
     {
@@ -27,7 +27,7 @@
     {
       "id": "project-3",
       "description": "Screenshot of Administration Dashboard project",
-      "imageUrl": "/images/dashboard.png",
+      "imageUrl": "/images/web3.png",
       "imageHint": "dashboard admin"
     }
   ]
