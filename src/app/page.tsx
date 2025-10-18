@@ -237,7 +237,7 @@ function SkillsSection() {
               <p className="text-sm text-foreground/80">{skill.description}</p>
               <div className="flex flex-wrap gap-2 pt-2">
                 {skill.technologies.map((tech) => (
-                  <Badge key={tech} variant="secondary">{tech}</Badge>
+                  <Badge key={tech} variant="default">{tech}</Badge>
                 ))}
               </div>
             </Card>
