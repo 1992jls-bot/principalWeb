@@ -134,8 +134,8 @@ function AboutSection() {
         <div className="grid gap-12 lg:grid-cols-5 lg:gap-16 items-center">
           <div className="lg:col-span-2 flex justify-center">
             {profilePicture && (
-              <Avatar className="h-48 w-48 border-4 border-primary/50 shadow-lg">
-                <AvatarImage src={profilePicture.imageUrl} alt={profilePicture.description} data-ai-hint={profilePicture.imageHint} />
+              <Avatar className="h-64 w-64 border-4 border-primary/50 shadow-lg">
+                <AvatarImage src={profilePicture.imageUrl} alt={profilePicture.description} />
                 <AvatarFallback>JL</AvatarFallback>
               </Avatar>
             )}
@@ -186,7 +186,7 @@ function ProjectsSection() {
                     alt={image.description}
                     width={600}
                     height={400}
-                    className="w-full h-48 object-contain"
+                    className="w-full h-48 object-cover"
                     data-ai-hint={image.imageHint}
                   />
                 )}
