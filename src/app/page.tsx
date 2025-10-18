@@ -4,7 +4,6 @@ import {
   Code,
   Database,
   GitBranch,
-  Github,
   Linkedin,
   Mail,
   MoveRight,
@@ -38,7 +37,7 @@ const projects = [
     title: "Proyecto 1: Landing Page Corporativa Dinámica",
     description:
       "Desarrollo de una interfaz de usuario moderna y adaptable para una web de presentación de servicios. El foco principal fue crear una experiencia de navegación fluida e intuitiva, asegurando la compatibilidad en todos los dispositivos.",
-    technologies: ["Angular", "TypeScript", "HTML5", "CSS3", "Responsive Design"],
+    technologies: ["Angular", "TypeScript", "Responsive Design"],
     liveLink: "https://jesuslopezweb.com/web1/",
   },
   {
@@ -49,7 +48,6 @@ const projects = [
     technologies: [
       "Angular",
       "ASP.NET Core",
-      "C#",
       "Entity Framework",
       "SQL Server",
     ],
@@ -60,7 +58,7 @@ const projects = [
     title: "Proyecto 3: Dashboard de Administración",
     description:
       "Diseño e implementación de un panel de control para la visualización y gestión de datos. La interfaz, construida con Angular, permite una manipulación de datos eficiente, mientras que el Back-End en .NET garantiza la seguridad y la integridad de la información.",
-    technologies: ["Angular", ".NET", "C#", "API RESTful", "SQL Server"],
+    technologies: ["Angular", "API RESTful", "SQL Server"],
     liveLink: "https://jesuslopezweb.com/web3/",
   },
 ];
