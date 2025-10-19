@@ -1,52 +1,160 @@
 
 "use client";
 
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
 import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+
+const formSchema = z.object({
+  name: z.string().min(2, { message: "El nombre debe tener al menos 2 caracteres." }),
+  email: z.string().email({ message: "Por favor, introduce un email válido." }),
+  message: z.string().min(10, { message: "El mensaje debe tener al menos 10 caracteres." }),
+});
 
 export function ContactForm() {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submissionStatus, setSubmissionStatus] = useState<"success" | "error" | null>(null);
+
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  });
+
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
+    setIsSubmitting(true);
+    setSubmissionStatus(null);
+
+    try {
+      const response = await fetch("https://submit-form.com/bP9x6FjMm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setSubmissionStatus("success");
+        form.reset();
+        toast({
+          title: "¡Mensaje enviado!",
+          description: "Gracias por contactar. Te responderé pronto.",
+        });
+      } else {
+        throw new Error("El envío del formulario falló");
+      }
+    } catch (error) {
+      console.error(error);
+      setSubmissionStatus("error");
+       toast({
+        variant: "destructive",
+        title: "¡Ups! Algo salió mal.",
+        description: "No se pudo enviar tu mensaje. Por favor, inténtalo de nuevo.",
+      });
+    } finally {
+      setIsSubmitting(false);
+      // Reset status after a delay to allow user to see message before form reappears
+      setTimeout(() => {
+        if(submissionStatus === 'success') {
+          setSubmissionStatus(null);
+        }
+      }, 5000);
+    }
+  };
+
+  if (submissionStatus === "success") {
+    return (
+      <div className="text-center p-8 border rounded-md">
+        <h3 className="text-xl font-bold">¡Gracias por tu mensaje!</h3>
+        <p className="mt-2">Te responderemos lo antes posible.</p>
+      </div>
+    );
+  }
+  
+  if (submissionStatus === "error") {
+     return (
+      <div className="text-center p-8 border rounded-md bg-destructive/10 border-destructive/20">
+        <h3 className="text-xl font-bold text-destructive">¡Ups! Algo salió mal.</h3>
+        <p className="mt-2 text-destructive/90">Por favor, inténtalo de nuevo más tarde.</p>
+         <Button onClick={() => setSubmissionStatus(null)} className="mt-4">Volver al formulario</Button>
+      </div>
+    );
+  }
+
   return (
-    <form
-      action="https://submit-form.com/bP9x6FjMm"
-      method="POST"
-      className="space-y-6"
-    >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="space-y-2">
-          <Label htmlFor="name">Nombre</Label>
-          <Input
-            id="name"
+    <Form {...form}>
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-6"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <FormField
+            control={form.control}
             name="name"
-            placeholder="Tu nombre"
-            required
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Nombre</FormLabel>
+                <FormControl>
+                  <Input placeholder="Tu nombre" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
           />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="email">Email</Label>
-          <Input
-            id="email"
+          <FormField
+            control={form.control}
             name="email"
-            type="email"
-            placeholder="tu@email.com"
-            required
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Email</FormLabel>
+                <FormControl>
+                  <Input placeholder="tu@email.com" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
           />
         </div>
-      </div>
-      <div className="space-y-2">
-        <Label htmlFor="message">Mensaje</Label>
-        <Textarea
-          id="message"
+        <FormField
+          control={form.control}
           name="message"
-          placeholder="Hola Jesús, me gustaría hablar sobre..."
-          className="min-h-[150px]"
-          required
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Mensaje</FormLabel>
+              <FormControl>
+                <Textarea
+                  placeholder="Hola Jesús, me gustaría hablar sobre..."
+                  className="min-h-[150px]"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
         />
-      </div>
-      <Button type="submit" className="w-full md:w-auto">
-        Envíame un mensaje
-      </Button>
-    </form>
+        <Button type="submit" className="w-full md:w-auto" disabled={isSubmitting}>
+          {isSubmitting ? "Enviando..." : "Envíame un mensaje"}
+        </Button>
+      </form>
+    </Form>
   );
 }
