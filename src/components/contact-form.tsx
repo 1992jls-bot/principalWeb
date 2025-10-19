@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useForm } from "react-hook-form";
@@ -14,10 +15,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
-import { submitContactForm } from "@/app/actions";
-import { useState } from "react";
-import { Loader2 } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, {message: "El nombre debe tener al menos 2 caracteres."}),
@@ -26,8 +23,6 @@ const formSchema = z.object({
 });
 
 export function ContactForm() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -37,29 +32,16 @@ export function ContactForm() {
     },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsSubmitting(true);
-    const result = await submitContactForm(values);
-    setIsSubmitting(false);
-
-    if (result.success) {
-      toast({
-        title: "¡Mensaje enviado!",
-        description: "Gracias por contactar. Te responderé lo antes posible.",
-      });
-      form.reset();
-    } else {
-      toast({
-        variant: "destructive",
-        title: "Error al enviar el mensaje",
-        description: "Hubo un problema. Por favor, inténtalo de nuevo más tarde.",
-      });
-    }
-  }
-
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+      <form 
+        action="https://submit-form.com/bP9x6FjMm"
+        method="POST"
+        onSubmit={form.handleSubmit(() => {
+          // La validación se ejecuta, pero el envío lo maneja el action del form
+        })} 
+        className="space-y-6"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FormField
             control={form.control}
@@ -105,8 +87,7 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full md:w-auto" disabled={isSubmitting}>
-          {isSubmitting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
+        <Button type="submit" className="w-full md:w-auto">
           Envíame un mensaje
         </Button>
       </form>
