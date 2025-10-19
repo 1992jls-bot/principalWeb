@@ -72,23 +72,8 @@ export function ContactForm() {
       });
     } finally {
       setIsSubmitting(false);
-      // Reset status after a delay to allow user to see message before form reappears
-      setTimeout(() => {
-        if(submissionStatus === 'success') {
-          setSubmissionStatus(null);
-        }
-      }, 5000);
     }
   };
-
-  if (submissionStatus === "success") {
-    return (
-      <div className="text-center p-8 border rounded-md">
-        <h3 className="text-xl font-bold">¡Gracias por tu mensaje!</h3>
-        <p className="mt-2">Te responderemos lo antes posible.</p>
-      </div>
-    );
-  }
   
   if (submissionStatus === "error") {
      return (
