@@ -32,14 +32,19 @@ export function ContactForm() {
     },
   });
 
+  // The form submission is handled by the form's action attribute.
+  // We can still use react-hook-form for validation.
+  const onSubmit = () => {
+    // Validation is successful, the form will now be submitted by the browser.
+  };
+
+
   return (
     <Form {...form}>
-      <form 
+      <form
         action="https://submit-form.com/bP9x6FjMm"
         method="POST"
-        onSubmit={form.handleSubmit(() => {
-          // La validación se ejecuta, pero el envío lo maneja el action del form
-        })} 
+        onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-6"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
