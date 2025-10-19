@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  Code,
   Database,
   GitBranch,
   Linkedin,
@@ -260,10 +259,6 @@ function ContactSection() {
               Estoy buscando activamente nuevos desafíos y oportunidades para aportar mi experiencia. Si tienes un proyecto en mente, una vacante en tu equipo o simplemente quieres conectar, no dudes en contactarme.
             </p>
             <div className="space-y-4">
-              <a href="mailto:contacto@jesuslopezweb.com" className="flex items-center gap-4 group">
-                <Mail className="h-6 w-6 text-primary" />
-                <span className="text-lg group-hover:underline">contacto@jesuslopezweb.com</span>
-              </a>
               <a href="https://www.linkedin.com/in/jesús-lópez-serrano" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <Linkedin className="h-6 w-6 text-primary" />
                 <span className="text-lg group-hover:underline">LinkedIn</span>
