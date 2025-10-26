@@ -33,7 +33,7 @@
 }
 
 body {
-    background: url(img/pattern.png);
+    background: url(/web2/img/pattern.png);
 }
 
 .wrap {
@@ -173,7 +173,7 @@ body {
     height: 100px;
     border: 10px solid white;
     box-shadow: 0px 0px 2px grey;
-    background: url(img/bakbaner.png);
+    background: url(/web2/img/bakbaner.png);
     background-position: -260px -200px;
     margin: 20px auto;
     overflow: hidden;
@@ -339,7 +339,7 @@ aside h3{
     width: auto;
     height: 45px;
     line-height: 49px;
-    background: url(img/pxgray.png), white;
+    background: url(/web2/img/pxgray.png), white;
     box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
     font-size: 30px;
     font-family: "BebasNeue";
@@ -540,7 +540,7 @@ aside h3:first-child{
     font-size: 40px;
     font-weight: normal;
     letter-spacing: 2px;
-    background: url(img/pxgray.png), white;
+    background: url(/web2/img/pxgray.png), white;
     box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
     margin: 0px auto;
     margin-top: 20px;
@@ -674,7 +674,7 @@ footer a{
 
 #footer h5{
     display: block;
-    background: url(img/pxgray.png) white;
+    background: url(/web2/img/pxgray.png) white;
     height: 50px;
     letter-spacing: 2px;
     text-align: center;
