@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "BebasNeue";
-    src: url(fonts/BebasNeue.otf);
+    src: url(/web2/onts/BebasNeue.otf);
     font-weight: normal;
     font-style: normal;
 }
@@ -62,7 +62,7 @@ body {
 
 #logo {
     float: left;
-    width: 200px;
+    width: 255px;
     background-color: #37bcf9;
     text-align: center;
     margin-top: 8px;
@@ -170,7 +170,7 @@ body {
 /*BANNER*/
 #banner{
     width: 95.6%;
-    height: 100px;
+    height: 132px;
     border: 10px solid white;
     box-shadow: 0px 0px 2px grey;
     background: url(/web2/img/bakbaner.png);
