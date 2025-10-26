@@ -190,10 +190,10 @@ function ProjectsSection() {
                 </CardContent>
                 <CardFooter>
                   <Button asChild className="w-full" variant="outline">
-                    <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
                       <Globe className="mr-2 h-4 w-4" />
                       Ver Proyecto en Vivo
-                    </Link>
+                    </a>
                   </Button>
                 </CardFooter>
               </Card>
