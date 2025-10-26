@@ -36,14 +36,14 @@ const projects = [
     title: "Proyecto 1: Landing Page Corporativa Dinámica",
     description:
       "Maquetación de una página web estática para una empresa ficticia, enfocada en una estructura semántica con HTML5 y estilos con CSS3",
-    liveLink: "https://jesuslopezweb.com/web1/",
+    liveLink: "/web1",
   },
   {
     id: "project-2",
     title: "Proyecto 2: Aplicación Web Interactiva",
     description:
       "Desarrollo de una landing page con diseño responsive, asegurando una correcta visualización en dispositivos móviles, tablets y escritorio usando Flexbox y Media Queries",
-    liveLink: "https://jesuslopezweb.com/web2/",
+    liveLink: "/web2",
   },
 ];
 
