@@ -127,7 +127,7 @@ function AboutSection() {
           <div className="lg:col-span-2 flex justify-center">
             {profilePicture && (
               <Avatar className="h-64 w-64 border-4 border-primary/50 shadow-lg">
-                <AvatarImage src={profilePicture.imageUrl} alt={profilePicture.description} />
+                <AvatarImage src={profilePicture.imageUrl} alt={profilePicture.description} className="object-cover" />
                 <AvatarFallback>JL</AvatarFallback>
               </Avatar>
             )}
