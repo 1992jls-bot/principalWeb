@@ -1,7 +1,7 @@
 /**FUENTES*/
 @font-face {
     font-family: "TrebuchetMS";
-    src: url(fonts/TrebuchetMS.ttf);
+    src: url(/web2/fonts/TrebuchetMS.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -15,12 +15,12 @@
 
 @font-face {
     font-family: "WebSymbolsRegular";
-    src: url(fonts/websymbols-regular-webfont.eot);
-    src: url(fonts/websymbols-regular-webfont.eot?#iefix) format(embedded-opentype),
+    src: url(/web2/fonts/websymbols-regular-webfont.eot);
+    src: url(/web2/fonts/websymbols-regular-webfont.eot?#iefix) format(embedded-opentype),
         /*Solucion para visualizar en internet explorer*/
-        url(fonts/websymbols-regular-webfont.woff) format(woff),
-        url(fonts/websymbols-regular-webfont.ttf) format(truetype),
-        url(fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format(svg);
+        url(/web2/fonts/websymbols-regular-webfont.woff) format(woff),
+        url(/web2/fonts/websymbols-regular-webfont.ttf) format(truetype),
+        url(/web2/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format(svg);
     font-weight: normal;
     font-style: normal;
 }
